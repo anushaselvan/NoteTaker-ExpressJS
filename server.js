@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const { clog } = require(',/middleware/clog');
 const api = require('./routes/index.js');
-const { allowedNodeEnvironmentFlags } = require('process');
 
 const PORT = process.env.port || 3001;
 
