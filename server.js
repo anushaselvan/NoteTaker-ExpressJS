@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
-const { clog } = require(',/middleware/clog');
-const api = require('./routes/index.js');
+const { clog } = require('./middleware/clog.js');
+const api = require('./routes/notes.js');
 
 const PORT = process.env.port || 3001;
 
@@ -16,12 +16,12 @@ app.use('/api', api);
 app.use(express.static('public'));
 
 //Get route for homepage
-app.get('/notes', (req,res) =>
-    res.sendFile(path.join(__dirname, '/public/notes.html'))
+app.get('/', (req,res) =>
+    res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 //Get route for note page
-app.get('*', (req,res) =>
-    res.sendFile(path.join(__dirname, '/public/index.html'))
+app.get('/notes', (req,res) =>
+    res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
 app.listen(PORT, () =>
