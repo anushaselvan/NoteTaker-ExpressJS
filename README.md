@@ -23,6 +23,9 @@
 ## Usage
   Run the application in the terminal using - node server.js. 
   Click on the populated link and access the application. Check out the screenshots of the app below:
+  
+![Notetaker1](https://user-images.githubusercontent.com/84444052/141879710-0dd295a4-6ba0-430a-8238-8a195db29131.PNG)
+![Notetaker2](https://user-images.githubusercontent.com/84444052/141879765-e4710754-7584-4ce8-a4cd-b1ad4dd18972.PNG)
 
 ## Contribution
   Submit a Pull Request to collaborate!
